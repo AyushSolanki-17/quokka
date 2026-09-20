@@ -2,15 +2,15 @@
 
 ## Environment
 
-Use Python 3.11.15, pinned in `.python-version`, and [uv](https://docs.astral.sh/uv/getting-started/installation/) for the local environment and dependency lockfile. If using [pyenv](https://github.com/pyenv/pyenv#installation), install that interpreter first:
+Use Python 3.12.13, pinned in `.python-version`, and [uv](https://docs.astral.sh/uv/getting-started/installation/) for the local environment and dependency lockfile. If using [pyenv](https://github.com/pyenv/pyenv#installation), install that interpreter first:
 
 ```sh
-pyenv install -s 3.11.15
+pyenv install -s 3.12.13
 uv sync --locked --python "$(pyenv which python)"
 uv run --locked pre-commit install
 ```
 
-Run these commands from the repository root with pyenv and uv on `PATH`. The committed `.python-version` selects the interpreter for this project without changing your global Python. If pyenv is unavailable, `uv sync --locked --python 3.11.15` can provision Python itself.
+Run these commands from the repository root with pyenv and uv on `PATH`. The committed `.python-version` selects the interpreter for this project without changing your global Python. If pyenv is unavailable, `uv sync --locked --python 3.12.13` can provision Python itself.
 
 `uv sync` creates `.venv/` and installs the locked development tools. Use `uv run --locked <command>` or optionally activate the environment with `source .venv/bin/activate`. The environment and caches stay out of Git.
 
