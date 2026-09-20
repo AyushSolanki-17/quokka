@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Internal docs
+/docs/internal
+
+# Local secrets (only sanitized examples belong in Git)
+.env.*
+!.env.example
+
+# Model downloads, datasets, and raw experiment output
+/artifacts/
+
+# macOS metadata
+.DS_Store
